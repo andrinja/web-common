@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="261px" height="260px" viewBox="0 0 261 260" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: sketchtool 64 (101010) - https://sketch.com -->
+    <title>59E618DF-5E34-44CA-9983-61D839A56BC8@1.50x</title>
+    <desc>Created with sketchtool.</desc>
+    <defs>
+        <circle id="path-1" cx="82" cy="82" r="82"></circle>
+        <filter x="-1.2%" y="-1.2%" width="102.4%" height="102.4%" filterUnits="objectBoundingBox" id="filter-2">
+            <feGaussianBlur stdDeviation="1" in="SourceAlpha" result="shadowBlurInner1"></feGaussianBlur>
+            <feOffset dx="0" dy="-2" in="shadowBlurInner1" result="shadowOffsetInner1"></feOffset>
+            <feComposite in="shadowOffsetInner1" in2="SourceAlpha" operator="arithmetic" k2="-1" k3="1" result="shadowInnerInner1"></feComposite>
+            <feColorMatrix values="0 0 0 0 0   0 0 0 0 0   0 0 0 0 0  0 0 0 0.0380244755 0" type="matrix" in="shadowInnerInner1"></feColorMatrix>
+        </filter>
+        <path d="M184.903145,152.657252 L180.908176,152.657252 L179.519497,154.03579 C184.425157,159.756217 187.408805,167.172146 187.408805,175.297467 C187.408805,193.359328 172.767296,208 154.704403,208 C136.641509,208 122,193.359328 122,175.297467 C122,157.235607 136.641509,142.594935 154.704403,142.594935 C162.830189,142.594935 170.241509,145.573381 175.962264,150.473729 L177.350943,149.095192 L177.350943,145.110514 L202.498113,120 L210,127.501458 L184.903145,152.657252 L184.903145,152.657252 Z M155,152 C142.293778,152 132,162.293778 132,175 C132,187.701111 142.293778,198 155,198 C167.701111,198 178,187.701111 178,175 C178,162.293778 167.701111,152 155,152 L155,152 Z" id="path-3"></path>
+        <filter x="-8.0%" y="-10.2%" width="115.9%" height="115.9%" filterUnits="objectBoundingBox" id="filter-4">
+            <feOffset dx="0" dy="-2" in="SourceAlpha" result="shadowOffsetOuter1"></feOffset>
+            <feGaussianBlur stdDeviation="2" in="shadowOffsetOuter1" result="shadowBlurOuter1"></feGaussianBlur>
+            <feColorMatrix values="0 0 0 0 0   0 0 0 0 0   0 0 0 0 0  0 0 0 0.0625 0" type="matrix" in="shadowBlurOuter1"></feColorMatrix>
+        </filter>
+    </defs>
+    <g id="Assets" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g transform="translate(-463.000000, -1089.000000)" id="Error">
+            <g transform="translate(463.000000, 1089.000000)">
+                <g id="Group-2" transform="translate(45.000000, 39.000000)">
+                    <g id="Oval">
+                        <use fill-opacity="0.08984375" fill="#524F5A" fill-rule="evenodd" xlink:href="#path-1"></use>
+                        <use fill="black" fill-opacity="1" filter="url(#filter-2)" xlink:href="#path-1"></use>
+                    </g>
+                    <ellipse id="Oval" fill-opacity="0.374781469" fill="#FFFFFF" transform="translate(50.000000, 32.500000) rotate(320.000000) translate(-50.000000, -32.500000) " cx="50" cy="32.5" rx="13" ry="5.5"></ellipse>
+                    <ellipse id="Oval" fill-opacity="0.194902753" fill="#000000" opacity="0.546293713" transform="translate(17.962645, 80.403444) rotate(5.000000) translate(-17.962645, -80.403444) " cx="17.9626447" cy="80.4034442" rx="8" ry="12.5"></ellipse>
+                    <ellipse id="Oval" fill-opacity="0.374781469" fill="#FFFFFF" transform="translate(133.838319, 30.959640) rotate(-15.000000) translate(-133.838319, -30.959640) " cx="133.838319" cy="30.9596397" rx="2.5" ry="5.5"></ellipse>
+                    <ellipse id="Oval" fill-opacity="0.374781469" fill="#FFFFFF" transform="translate(110.812565, 23.520018) rotate(40.000000) translate(-110.812565, -23.520018) " cx="110.812565" cy="23.5200175" rx="8" ry="4.5"></ellipse>
+                    <ellipse id="Oval" fill-opacity="0.194902753" fill="#000000" opacity="0.546293713" transform="translate(35.020900, 137.589501) rotate(40.000000) translate(-35.020900, -137.589501) " cx="35.0208998" cy="137.589501" rx="8" ry="4.5"></ellipse>
+                    <ellipse id="Oval" fill-opacity="0.194902753" fill="#000000" opacity="0.546293713" transform="translate(97.330040, 154.980540) rotate(-11.000000) translate(-97.330040, -154.980540) " cx="97.33004" cy="154.98054" rx="8" ry="2.5"></ellipse>
+                </g>
+                <g id="Shape" transform="translate(166.000000, 164.000000) scale(1, -1) translate(-166.000000, -164.000000) ">
+                    <use fill="black" fill-opacity="1" filter="url(#filter-4)" xlink:href="#path-3"></use>
+                    <use fill="#FFFFFF" fill-rule="evenodd" xlink:href="#path-3"></use>
+                </g>
+                <path d="M138,153.5 C138,157.089851 140.910149,160 144.5,160 L144.5,160 C148.089851,160 151,157.089851 151,153.5" id="Path" stroke="#061B25" stroke-width="2"></path>
+                <path d="M155,153.5 C155,157.089851 157.910149,160 161.5,160 L161.5,160 C165.089851,160 168,157.089851 168,153.5" id="Path" stroke="#061B25" stroke-width="2"></path>
+                <g id="Group" transform="translate(201.000000, 51.000000)" stroke="#979797">
+                    <line x1="8.5" y1="0" x2="8.5" y2="17" id="Path-2"></line>
+                    <line x1="8.5" y1="0" x2="8.5" y2="17" id="Path-2" transform="translate(8.500000, 8.500000) scale(-1, -1) rotate(-270.000000) translate(-8.500000, -8.500000) "></line>
+                </g>
+                <g id="Group" transform="translate(31.000000, 191.000000)" stroke="#979797">
+                    <line x1="8.5" y1="0" x2="8.5" y2="17" id="Path-2"></line>
+                    <line x1="8.5" y1="0" x2="8.5" y2="17" id="Path-2" transform="translate(8.500000, 8.500000) scale(-1, -1) rotate(-270.000000) translate(-8.500000, -8.500000) "></line>
+                </g>
+                <g id="Group" transform="translate(54.000000, 179.000000)" stroke="#979797">
+                    <line x1="5.5" y1="0" x2="5.5" y2="11" id="Path-2"></line>
+                    <line x1="5.5" y1="7.07336048e-13" x2="5.5" y2="11" id="Path-2" transform="translate(5.500000, 5.500000) scale(-1, -1) rotate(-270.000000) translate(-5.500000, -5.500000) "></line>
+                </g>
+                <g id="Group" transform="translate(209.000000, 157.000000)" stroke="#979797">
+                    <line x1="5.5" y1="0" x2="5.5" y2="11" id="Path-2"></line>
+                    <line x1="5.5" y1="7.07336048e-13" x2="5.5" y2="11" id="Path-2" transform="translate(5.500000, 5.500000) scale(-1, -1) rotate(-270.000000) translate(-5.500000, -5.500000) "></line>
+                </g>
+                <g id="Group" transform="translate(38.000000, 59.000000)" stroke="#979797">
+                    <line x1="6.5" y1="0" x2="6.5" y2="13" id="Path-2"></line>
+                    <line x1="6.5" y1="-8.48680603e-13" x2="6.5" y2="13" id="Path-2" transform="translate(6.500000, 6.500000) scale(-1, -1) rotate(-270.000000) translate(-6.500000, -6.500000) "></line>
+                </g>
+                <g id="Group" transform="translate(38.000000, 59.000000)" stroke="#979797">
+                    <line x1="6.5" y1="0" x2="6.5" y2="13" id="Path-2"></line>
+                    <line x1="6.5" y1="-8.48680603e-13" x2="6.5" y2="13" id="Path-2" transform="translate(6.500000, 6.500000) scale(-1, -1) rotate(-270.000000) translate(-6.500000, -6.500000) "></line>
+                </g>
+                <g id="Group" transform="translate(215.000000, 43.000000)" stroke="#979797">
+                    <line x1="4.5" y1="0" x2="4.5" y2="8" id="Path-2"></line>
+                    <line x1="4.5" y1="-3.41607085e-16" x2="4.5" y2="8" id="Path-2" transform="translate(4.500000, 4.000000) scale(-1, -1) rotate(-270.000000) translate(-4.500000, -4.000000) "></line>
+                </g>
+                <g id="Group" transform="translate(221.000000, 65.000000)" stroke="#979797">
+                    <line x1="4.5" y1="0" x2="4.5" y2="8" id="Path-2"></line>
+                    <line x1="4.5" y1="-3.41607085e-16" x2="4.5" y2="8" id="Path-2" transform="translate(4.500000, 4.000000) scale(-1, -1) rotate(-270.000000) translate(-4.500000, -4.000000) "></line>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

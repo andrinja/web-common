@@ -1,0 +1,20 @@
+{
+	"compilerOptions": {
+		"allowJs": true,
+		"baseUrl": "./src/",
+		"declaration": true,
+		"esModuleInterop": true,
+		"inlineSources": true,
+		"jsx": "react",
+		"module": "esnext",
+		"moduleResolution": "Node",
+		"noImplicitAny": true,
+		"outDir": "dist",
+		"preserveConstEnums": true,
+		"removeComments": true,
+		"rootDir": "src",
+		"sourceMap": true,
+		"strict": true,
+		"target": "ES6"
+	}
+}

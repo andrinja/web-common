@@ -1,0 +1,85 @@
+image: node:20
+
+definitions:
+  steps:
+    - step: &install
+        name: Install
+        caches:
+          - node
+        script:
+          - npm ci
+        artifacts:
+          - node_modules/**
+    - step: &linting
+        name: Linting
+        script:
+          - npm run lint
+    - step: &test
+        name: Test
+        script:
+          - npm run test:ci -- --maxWorkers=2
+    - step: &build
+        name: Build
+        script:
+          - npm run build
+        artifacts:
+          - dist/**
+    - step: &publish
+        name: Publish
+        trigger: manual
+        deployment: production
+        script:
+          - sed -i 's/npm-all/npm-internal/' .npmrc
+          - cat .npmrc
+          - npm publish
+    - step: &build-storybook
+        name: Build Storybook
+        script:
+          - npm run storybook:build
+        artifacts:
+          - storybook-static/**
+    - step: &deploy-storybook
+        name: Deploy Storybook
+        script:
+          - pipe: atlassian/aws-s3-deploy:1.6.0
+            variables:
+              AWS_ACCESS_KEY_ID: $AWS_ACCESS_KEY_ID
+              AWS_SECRET_ACCESS_KEY: $AWS_SECRET_ACCESS_KEY
+              AWS_DEFAULT_REGION: "eu-central-1"
+              S3_BUCKET: "moodagent-storybook-tooling"
+              LOCAL_PATH: "storybook-static"
+              DELETE_FLAG: "true"
+          - pipe: atlassian/aws-cloudfront-invalidate:0.10.0
+            variables:
+              AWS_ACCESS_KEY_ID: $AWS_ACCESS_KEY_ID
+              AWS_SECRET_ACCESS_KEY: $AWS_SECRET_ACCESS_KEY
+              AWS_DEFAULT_REGION: "eu-central-1"
+              DISTRIBUTION_ID: $AWS_CLOUDFRONT_DISTRIBUTION_ID_STORYBOOK
+
+pipelines:
+  default:
+    - step: *install
+    - parallel:
+        steps:
+          - step: *linting
+          - step: *test
+
+  custom:
+    storybook:
+      - step: *install
+      - step: *build-storybook
+      - step: *deploy-storybook
+
+  branches:
+    master:
+      - step: *install
+      - parallel:
+          steps:
+            - step: *linting
+            - step: *test
+      - parallel:
+          steps:
+            - step: *build
+            - step: *build-storybook
+      - step: *deploy-storybook
+      - step: *publish

@@ -1,0 +1,70 @@
+{
+	"extends": [
+		"eslint:recommended",
+		"plugin:@typescript-eslint/recommended",
+		"plugin:@stylistic/recommended-extends"
+	],
+	"parserOptions": {
+		"ecmaVersion": 2020,
+		"ecmaFeatures": {
+			"jsx": true
+		},
+		"project": "./tsconfig.json"
+	},
+	"parser": "@typescript-eslint/parser",
+	"plugins": ["react", "react-hooks", "@stylistic/eslint-plugin", "@typescript-eslint"],
+	"rules": {
+		"@stylistic/array-bracket-spacing": ["error", "never"],
+		"@stylistic/arrow-parens": ["error", "as-needed"],
+		"@stylistic/block-spacing": ["error", "never"],
+		"@stylistic/comma-dangle": ["error", {
+			"arrays": "always-multiline",
+			"objects": "always-multiline",
+			"imports": "always-multiline",
+			"exports": "always-multiline",
+			"functions": "never"
+		}],
+		"@stylistic/eol-last": "off",
+		"@stylistic/brace-style": ["error", "1tbs"],
+		"@stylistic/indent": ["error", "tab", {
+			"SwitchCase": 1
+		}],
+		"@stylistic/indent-binary-ops": "off",
+		"@stylistic/jsx-indent": ["error", "tab"],
+		"@stylistic/jsx-indent-props": ["error", "tab"],
+		"@stylistic/jsx-one-expression-per-line": "off",
+		"@stylistic/jsx-tag-spacing": ["error", {"beforeSelfClosing": "never"}],
+		"@stylistic/max-len": ["error", {
+			"code": 100,
+			"ignoreStrings": true,
+			"ignoreTemplateLiterals": true,
+			"ignoreUrls": true,
+			"ignoreRegExpLiterals": true,
+			"tabWidth": 2
+		}],
+		"@stylistic/multiline-ternary": "off",
+		"@stylistic/no-mixed-operators": "off",
+		"@stylistic/no-tabs": ["error", {
+			"allowIndentationTabs": true
+		}],
+		"@stylistic/object-curly-spacing": ["error", "never"],
+		"@stylistic/operator-linebreak": ["error", "before"],
+		"@stylistic/padded-blocks": "off",
+		"@stylistic/quote-props": ["error", "as-needed"],
+		"@stylistic/quotes": ["error", "single"],
+		"@stylistic/semi": ["error", "always"],
+		"@stylistic/space-before-function-paren": ["error", "never"],
+		"@typescript-eslint/explicit-function-return-type": "off",
+		"curly": ["error", "all"],
+		"eqeqeq": ["error", "always"],
+		"no-case-declarations": "off",
+		"react-hooks/exhaustive-deps": "warn",
+		"react/jsx-uses-vars": "warn",
+		"react/jsx-tag-spacing": ["warn", {
+			"closingSlash": "never",
+			"beforeSelfClosing": "never",
+			"afterOpening": "never",
+			"beforeClosing": "never"
+		}]
+	}
+}

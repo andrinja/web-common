@@ -1,0 +1,8 @@
+export default {
+	API: 'API',
+	GENERIC: 'GENERIC',
+	INTERNET: 'INTERNET',
+	NOT_FOUND: 'NOT_FOUND',
+	SIGN_IN: 'SIGN_IN',
+	TIMEOUT: 'TIMEOUT',
+};

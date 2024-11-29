@@ -1,0 +1,23 @@
+export {default as bolt} from './inactive/bolt.svg';
+export {default as celebration} from './inactive/celebration.svg';
+export {default as exercise} from './inactive/exercise.svg';
+export {default as favorite} from './inactive/favorite.svg';
+export {default as instant_mix} from './inactive/instant_mix.svg';
+export {default as light_mode} from './inactive/light_mode.svg';
+export {default as local_cafe} from './inactive/local_cafe.svg';
+export {default as local_fire_department} from './inactive/local_fire_department.svg';
+export {default as music_note} from './inactive/music_note.svg';
+export {default as spa} from './inactive/spa.svg';
+export {default as stars} from './inactive/stars.svg';
+
+export {default as bolt_active} from './active/bolt.svg';
+export {default as celebration_active} from './active/celebration.svg';
+export {default as exercise_active} from './active/exercise.svg';
+export {default as favorite_active} from './active/favorite.svg';
+export {default as instant_mix_active} from './active/instant_mix.svg';
+export {default as light_mode_active} from './active/light_mode.svg';
+export {default as local_cafe_active} from './active/local_cafe.svg';
+export {default as local_fire_department_active} from './active/local_fire_department.svg';
+export {default as music_note_active} from './active/music_note.svg';
+export {default as spa_active} from './active/spa.svg';
+export {default as stars_active} from './active/stars.svg';

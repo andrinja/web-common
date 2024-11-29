@@ -1,0 +1,26 @@
+{
+	"presets": [
+		["@babel/preset-env", {"modules": false}],
+		["@babel/preset-react", {"runtime": "automatic"}],
+		["@babel/preset-typescript", {"root": ["./"]}]
+	],
+	"plugins": [
+		["babel-plugin-module-resolver",
+			{
+				"root": ["./src"]
+			}
+		],
+		"@babel/plugin-proposal-class-properties",
+		"@babel/plugin-proposal-export-default-from",
+		"@babel/plugin-proposal-export-namespace-from",
+		"inline-react-svg"
+	],
+	"env": {
+		"test": {
+			"plugins": [
+				"@babel/transform-runtime",
+				"@babel/plugin-transform-modules-commonjs"
+			]
+		}
+	}
+}
